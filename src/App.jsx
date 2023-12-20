@@ -11,7 +11,7 @@ function App() {
         Palettes: Your Ultimate Color Palette Generator.
       </h1>
       
-      <p>Welcome to Palettes, where creativity meets color ! Unleash the power of vibrant hues and design stunning color palettes effortlessly. <span id="hero-section-keyword">Discover. Create. Inspire. &#128171;</span></p>
+      <p id='homepage-desc'>Welcome to Palettes, where creativity meets color ! Unleash the power of vibrant hues and design stunning color palettes effortlessly. <span id="hero-section-keyword">Discover. Create. Inspire. &#128171;</span></p>
       <Link to="generatePalette" id="call-to-action">Generate</Link>
       <footer id="footer">Made with &#129505; by surendhar</footer>
     </>

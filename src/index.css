@@ -22,19 +22,9 @@ a {
   font-family: "poppins";
 }
 
-#fetchColor{
-  text-decoration: none;
-    background-color: #2f2f2f;
-    border-radius: 8px;
-    border: 1px solid transparent;
-    padding: 0.6em 1.2em;
-    font-size: 1em;
-    font-weight: 500;
-    color: #ececec;
-    cursor: pointer;
-    font-family: "poppins";
 
-}
+
+
 
 a:hover{
   scale: 1.015;
@@ -73,5 +63,57 @@ h1 {
 #separator {
   width:60%;
   background-color: #747474;
+
+}
+
+#palette-container {
+  display:flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+#homepage-desc{
+  font-size:24px;
+  margin-bottom:36px;
+
+}
+#palette-desc {
+  font-size:16px;
+  font-family: inter;
+  color:#626262
+}
+#palette-displayer {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center
+}
+
+#header{
+  display:flex;
+  gap:48px;
+  align-items: center;
+
+}
+
+#logo{
+  font-size:24px
+}
+#shade{
+  height: 36em;
+  width: 20em;
+}
+
+#fetchColor {
+  text-decoration: none;
+  background-color: #2f2f2f;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  color: #ececec;
+  cursor: pointer;
+  font-family: "poppins";
 
 }
