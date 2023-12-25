@@ -1,12 +1,7 @@
 :root {
   
   font-family: "poppins";
-  line-height: 1.5;
-  font-weight: 400;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  
 }
 
 a {
@@ -32,8 +27,7 @@ a:hover{
 }
 
 body {
-  display: flex;
-  place-items: top;
+
   background-color: #ececec;
 }
 
@@ -42,11 +36,11 @@ body {
 }
 
 #footer{
-    position: absolute;
-    bottom: 32px;
-    left: 0;
-    width: 100%;
-    text-align: center;
+  position: absolute;
+  bottom: 32px;
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 p {
@@ -75,36 +69,77 @@ h1 {
 #homepage-desc{
   font-size:24px;
   margin-bottom:36px;
-
 }
+
 #palette-desc {
   font-size:16px;
   font-family: inter;
   color:#626262
 }
+
 #palette-displayer {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: center
+  justify-content: center;
+  border-radius: 16px;
+}
+
+#copy-palette{
+  display:flex;
+  align-items: center;
+  cursor: pointer;
+  
+}
+#copy-desc{
+font-size: 16px;
+  font-family: inter;
+  
+}
+
+#copy-palette:hover{
+  border-radius: 6px;
+    background-color: #e0e0e0;
+    padding-right: 14px;
 }
 
 #header{
   display:flex;
   gap:48px;
   align-items: center;
-
 }
 
 #logo{
   font-size:24px
 }
-#shade{
+
+.shade{
   height: 36em;
   width: 20em;
 }
 
-#fetchColor {
+.shade:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}.shade:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.features{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  height:24em;
+  gap:5px;
+}
+
+.shade:hover{
+  cursor: pointer;
+}
+
+#fetchColor{
   text-decoration: none;
   background-color: #2f2f2f;
   border-radius: 8px;
@@ -115,5 +150,37 @@ h1 {
   color: #ececec;
   cursor: pointer;
   font-family: "poppins";
+}
 
+#copy:hover {
+    padding:12px;
+    filter: brightness(96%);
+    border-radius: 6px;
+    cursor:pointer;
+}
+
+#drag:hover {
+    padding: 12px;
+    filter: brightness(96%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#unlock:hover {
+    padding: 12px;
+    filter: brightness(96%);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#copy {
+  padding: 12px;
+}
+
+#drag {
+  padding: 12px;
+}
+
+#unlock {
+  padding: 12px;
 }
