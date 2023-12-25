@@ -6,6 +6,8 @@ import { useState,useEffect } from 'react';
 import rgbHex from 'rgb-hex';
 import { GetColorName } from 'hex-color-to-color-name';
 
+
+
 import ColorPicker from './ColorPicker';
 
 // Image imports
@@ -16,6 +18,8 @@ import unlock from "/src/assets/unlock.svg";
 
 
 const Palette = () => {
+
+
 
   // Stores the palette returned from the ColorMind API
   const [palette,setPalette]=useState([]);
@@ -67,9 +71,9 @@ const Palette = () => {
   // HTML returned body
   return (
     <div id='palette-container'>
+
       <div id='header'>
-        
-        <h1 id='logo' >Palettes</h1>
+        <h1 id='logo'>Palettes</h1>
         <p id='palette-desc'>Click any key to generate a palette!</p>
         <div id='copy-palette' onClick={() =>{navigator.clipboard.writeText(JSON.stringify(color))}}>
           {console.log("copied:",JSON.stringify(color))}
@@ -84,6 +88,7 @@ const Palette = () => {
           <p id="copy-desc">Copy palette</p>
 
         </div>
+        
         
         
       </div>
@@ -152,6 +157,8 @@ const Palette = () => {
         )
       })}
         </div>
+
+        
     </div>
   )
 }
